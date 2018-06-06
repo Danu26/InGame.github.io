@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Team</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link href="assets/css/header.css" rel="stylesheet">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <script src="assets/js/jquery-3.3.1.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+
+      <script>
+      $(document).ready(function(){
+        $(".boxsearch").hide();
+        $(".btn-be-search").hide();
+        $(".srch").hide();
+
+        
+        // Search
+        $(".cari").click(function(){
+          $(".boxsearch").show();
+          $(".btn-be-search").show();
+          $(".srch").show();
+          $(this).hide();
+            });
+          $(".dropdown-menu").hide();
+
+        $(".btn-be-search").mouseenter(function(){
+          $(this).css("cursor","pointer");
+         });
+
+        $(".btn-be-search").click(function(){
+          $(".cari").show();
+          $(this).hide();
+          $(".boxsearch").hide();
+          $(".srch").hide();
+           });
+        
+        $(".cari").mouseenter(function(){
+          $(this).css("cursor","pointer");
+        });
+        // dropdown
+        $(".dropdown").mouseenter(function(){
+          $(".dropdown-toggle").dropdown();
+        });
+
+        $(".dropdown").mouseleave(function(){
+          $(".dropdown-menu").hide();
+        });
+        
+        }); 
+    </script>
+
+    <style type="text/css">
+    .main{
+      background-color: #2d2c2c;
+      height: 800px;
+      margin-top: 70px;
+    /*  display: flex;*/
+    }
+    body{
+      background-color: #232323;
+    }
+    h1{
+      color : white;
+      font-family: inhiret;
+      margin-bottom: 50px;
+    }
+    .lingkaran{
+      position: relative;
+      width: 300px;
+      height: 300px;
+      border-radius: 150px;
+      background-color: white;
+      float: left;
+      margin-left: 60px;
+    }
+        .image {
+      display: block;
+      width: 100%;
+      height: auto;
+      border-radius: 50%;
+    }
+
+    .middle {
+      transition: .5s ease;
+      opacity: 0;
+      position: absolute;
+      width: 300px;
+      top: 50%;
+      margin-left: 200px;
+       border-radius: 50%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+    }
+
+    .lingkaran:hover .image {
+      opacity: 0.3;
+    }
+
+    .lingkaran:hover .middle {
+      opacity: 1;
+    }
+
+    p{
+      color: white;
+      margin-top: 20px;
+    }
+    .nama{
+      color: white;
+    }
+
+    </style>
+</head>
+<body>
+<header id="header">
+    <nav class="navbar navbar-fixed-top" role="banner">  
+      <div class="container">
+        <!--/.logo-->
+          <ul class="nav navbar-nav ">
+            <a class="navbar-brand" href="index.html">
+          <!-- contoh logo -->
+            <img class="logo" src="assets/img/logo.png"> 
+            </a>
+            <li class=""><a class="nav-link" href="index.html">Home</a></li>
+            <li><a class="nav-link" href="pcgame.html">Pc Games</a>
+            <li  class="dropdown">
+              <a class="nav-link" href="#" class="dropdown-toggle"" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false" >Console</a>
+                <ul class="dropdown-menu">
+                  <li><a class="nav-link" href="playstation.html">Playstation</a></li>
+                  <li><a class="nav-link" href="xbox.html">Xbox</a></li>
+                  <li><a class="nav-link" href="Nintendo.html">Nintendo</a></li>
+                </ul>
+            </li>
+            <li><a class="nav-link" href="mobile.html">Mobile</a></li>
+            <li><a class="nav-link" href="review.html">Review</a></li>
+            <li><a class="nav-link" href="trailer.html">Trailer</a></li>
+            <li><a class="nav-link" href="aboutus.html">About Us</a></li>
+            <li><a class="nav-link" href="contact.html">Contact Us</a></li>
+            <li><a class="nav-link active" href="team.html">Team</a></li>
+            <!--/.Menu-->
+
+            <li><a class="cari"><img class="be-cari" src="assets/img/search-icon.png"></a></li>
+          </ul>
+          <div class="btn-be-search">
+            <img class="af-cari" src="assets/img/close-icon.png">
+          </div>
+          <form class="form-inline" action="search.html">
+            <input class="boxsearch" type="search" placeholder=" Search.." name="search">
+            <button class="srch"><img class="icari" src="assets/img/search-icon.png"></button>
+            </form>
+          <!--/.search-->
+        <!--/.Menu-->
+      </div>
+    
+         <!--/.container-->
+    </nav>
+    <!--/nav-->
+  </header>
+  
+ <div class="container main">
+    <h1 align="center">Team</h1>
+    <br>
+    <div class="lingkaran">
+      <img src="assets/img/ava1.png" alt="avatar" class="image">
+      <div class="middle">
+        <a href="#"><img class="img" src="assets/img/bfacebook.png"></a>
+        <a href="#"><img class="img" src="assets/img/btwitter.png"></a>
+        <a href="#"><img class="img" src="assets/img/bgoogle.png"></a>
+        </div>
+        <h4 class="nama">Nama</h4>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+    <div class="lingkaran">
+      <img src="assets/img/ava2.png" alt="avatar" class="image">
+      <div class="middle">
+        <a href="#"><img class="img" src="assets/img/bfacebook.png"></a>
+        <a href="#"><img class="img" src="assets/img/btwitter.png"></a>
+        <a href="#"><img class="img" src="assets/img/bgoogle.png"></a>
+        </div>
+        <h4 class="nama">Nama</h4>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+    <div class="lingkaran">
+      <img src="assets/img/ava3.png" alt="avatar" class="image">
+      <div class="middle">
+        <a href="#"><img class="img" src="assets/img/bfacebook.png"></a>
+        <a href="#"><img class="img" src="assets/img/btwitter.png"></a>
+        <a href="#"><img class="img" src="assets/img/bgoogle.png"></a>
+        </div>
+        <h4 class="nama">Nama</h4>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+</div>
+</body>
+</html>

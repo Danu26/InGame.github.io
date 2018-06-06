@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>About Us</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="assets/css/header.css" rel="stylesheet">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <script src="assets/js/jquery-3.3.1.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    <script>
+      $(document).ready(function(){
+        $(".boxsearch").hide();
+        $(".btn-be-search").hide();
+        $(".srch").hide();
+
+        
+        // Search
+        $(".cari").click(function(){
+          $(".boxsearch").show();
+          $(".btn-be-search").show();
+          $(".srch").show();
+          $(this).hide();
+            });
+          $(".dropdown-menu").hide();
+
+        $(".btn-be-search").mouseenter(function(){
+          $(this).css("cursor","pointer");
+         });
+
+        $(".btn-be-search").click(function(){
+          $(".cari").show();
+          $(this).hide();
+          $(".boxsearch").hide();
+          $(".srch").hide();
+           });
+        
+        $(".cari").mouseenter(function(){
+          $(this).css("cursor","pointer");
+        });
+        // dropdown
+        $(".dropdown").mouseenter(function(){
+          $(".dropdown-toggle").dropdown();
+        });
+
+        $(".dropdown").mouseleave(function(){
+          $(".dropdown-menu").hide();
+        });
+        
+        }); 
+    </script>
+    <style type="text/css">
+      body{
+        background-color: black;
+      }
+
+      .main{
+        background-color: #2d2c2c;
+        margin-top: 30px;
+        height: auto;
+      }
+      h2{
+        margin-left: 80px;
+      }
+      img{
+        height: 240px;
+        width: 360px;
+      }
+      table{
+        width: 100%;
+        margin-top: 30px;
+        margin-bottom: 200px;
+      }
+      p{
+        font-size: 14px;
+        text-align: justify;
+        width: 700PX;
+        color: white;
+      }
+      h1{
+        text-align: center;
+        font-size: 50px;
+        margin-bottom: 50PX;
+        color: white;
+      }
+    </style>
+</head>
+<body>
+
+ <header id="header">
+    <nav class="navbar fixed-top" role="banner">  
+      <div class="container">
+        <!--/.logo-->
+          <ul class="nav navbar-nav ">
+            <a class="navbar-brand" href="index.html">
+          <!-- contoh logo -->
+            <img class="logo" src="assets/img/logo.png"> 
+            </a>
+            <li class=""><a class="nav-link" href="index.html">Home</a></li>
+            <li><a class="nav-link" href="pcgame.html">Pc Games</a>
+            <li  class="dropdown">
+              <a class="nav-link" href="#" class="dropdown-toggle"" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false" >Console</a>
+                <ul class="dropdown-menu">
+                  <li><a class="nav-link" href="playstation.html">Playstation</a></li>
+                  <li><a class="nav-link" href="xbox.html">Xbox</a></li>
+                  <li><a class="nav-link" href="Nintendo.html">Nintendo</a></li>
+                </ul>
+            </li>
+            <li><a class="nav-link" href="mobile.html">Mobile</a></li>
+            <li><a class="nav-link" href="review.html">Review</a></li>
+            <li><a class="nav-link" href="trailer.html">Trailer</a></li>
+            <li><a class="nav-link active" href="aboutus.html">About Us</a></li>
+            <li><a class="nav-link " href="contact.html">Contact Us</a></li>
+            <li><a class="nav-link" href="team.html">Team</a></li>
+            <!--/.Menu-->
+
+            <li><a class="cari"><img class="be-cari" src="assets/img/search-icon.png"></a></li>
+          </ul>
+          <div class="btn-be-search">
+            <img class="af-cari" src="assets/img/close-icon.png">
+          </div>
+          <form class="form-inline" action="search.html">
+            <input class="boxsearch" type="search" placeholder=" Search.." name="search">
+            <button class="srch"><img class="icari" src="assets/img/search-icon.png"></button>
+            </form>
+          <!--/.search-->
+        <!--/.Menu-->
+      </div>
+    
+         <!--/.container-->
+    </nav>
+    <!--/nav-->
+  </header>
+  
+
+<div class="container main">
+  <table>
+    <tr>
+      <th colspan="2"><h1>About Us</h1></th>
+    </tr>
+    <tr>
+      <th>
+        <p>
+          Website berita game menyanjikan beberapa informasi terkini mengenai game-game yang sedang update. Website berita game akan menyajikan informasi berbagai jenis game dari game console, mobile, dan pc. Website ini juga akan memberikan beberapa tips & trick mengenai seputar game.
+  Dalam pengembangan dan pembentukan website ini digunakan bahasa HTML5, CSS serta Javascript, yang berarti ketiga bahasa itu merupakan pondasi utama yang mana akan digunakan untuk pembuatan website ini. Pemilihan ketiga bahasa tersebut sebagai pondasi pembuatan website dikarenakan proses pembuatan dapat terlihata lebih umum serta penanganan kesalahan yang lebih baik.
+Framework yang digunakan adalah jQuery, Angularjs dan Bootstrap. jQuery merupakan library javaScript multiplatform yang dirancang untuk memudahkan penyusunan client-side script pada file HTML. Angularjs sedikit berbeda dengan jQuery dikarenakan bukan berupa library melainkan framework yang solid, sama sepertu framework lainnya. AngularJs memiliki konsep MVC (Model, View, Control). Bootstrap adalah sebuah framework CSS yang dapat digunakan untuk mempermudah membangun tampilan web.
+        </p>
+      </th>
+      <th>
+        <img src="assets\img\logo.png">
+      </th>
+    </tr>
+  </table>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,108 @@
+
+/*******Page******/
+.pagination{
+
+	position: relative;
+	left: 45%;
+}
+.active{
+	z-index: 1;
+	background-color: #a50505;
+}
+/*******Trailer******/
+.trailer-container{
+  background-color: transparent;
+  margin-bottom: 5%;
+}
+
+.trailer{
+	margin-top: 5%;
+}
+.trailer-box:hover .trailer-img{
+  opacity: 0.2;
+}
+
+.trailer-box:hover .trailer-overlay {
+  opacity: 0.2;
+}
+.judul{
+	color: white;
+	margin-top: 10px;
+	margin-bottom: -10px;
+}
+
+
+.trailer-overlay{
+	height: 85%;
+	width: 93%;
+	position: absolute;
+	bottom: 0%;
+	padding-left: 15%;
+	padding-top: 20%;
+	padding-right: 20%;
+	text-align: center;
+	background-color: #2d2c2c;
+}
+
+.col-lg-4{
+	border:10px;
+	height: 10%;
+
+}
+.trailer-box{
+	margin-top: 10%;
+	border: 5px;
+	height: 50%;
+	border:10px;
+	background-color: #232323;
+}
+.play{
+ height: 25%;
+ width: 25%;
+ background-color: #fff;
+ border-radius: 50%;
+ position: absolute;
+ top: 45%;
+ left: 35%;
+}
+.play-img{
+	height: 100%;
+	width: 100%;
+}
+.trailer-img{
+	height: 100%;
+	width: 100%;
+	border: 5px;
+}
+
+/*Modal*/
+.modal{
+	margin-top: 10%;
+}
+.modal-lg{
+	height: 400px;
+}
+.modal-frame{
+	height: 100%;
+	opacity: 1;
+}
+.btn-close{
+	margin-right: -5%;
+	padding-right: 5%;
+	height: 10%;
+	width: 5%;
+	border-radius: 50%;
+	position: absolute;
+	top: -5%;
+	right: 2%;
+	opacity: 1;
+}
+.close-btn{
+	height: 100%;
+	width: -100%;
+
+}
+.t-frame{
+	width: 100%;
+	height: 100%;
+}

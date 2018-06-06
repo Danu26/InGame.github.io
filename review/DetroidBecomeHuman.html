@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Berita</title>
+  <link href="../assets/css/header.css" rel="stylesheet">
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
+    <script src="../assets/js/jquery-3.3.1.js"></script>
+    <script src="../assets/js/bootstrap.min.js"></script>
+    <script src="../assets/js/angular/angular.min.js"></script>
+
+
+    <script>
+      var app = angular.module('mycomment', []); 
+      app.controller('myctrl', function($scope) {
+          $scope.x = [""];
+          $scope.nama = [""];
+          $scope.addItem = function () {
+          $scope.x.push($scope.addMe);
+          $scope.nama.push($scope.addNama);
+    }   
+    });
+    </script>
+    <script>
+      $(document).ready(function(){
+        $(".boxsearch").hide();
+        $(".btn-be-search").hide();
+        $(".srch").hide();
+
+        
+        // Search
+        $(".cari").click(function(){
+          $(".boxsearch").show();
+          $(".btn-be-search").show();
+          $(".srch").show();
+          $(this).hide();
+            });
+          $(".dropdown-menu").hide();
+
+        $(".btn-be-search").mouseenter(function(){
+          $(this).css("cursor","pointer");
+         });
+
+        $(".btn-be-search").click(function(){
+          $(".cari").show();
+          $(this).hide();
+          $(".boxsearch").hide();
+          $(".srch").hide();
+           });
+        
+        $(".cari").mouseenter(function(){
+          $(this).css("cursor","pointer");
+        });
+        // dropdown
+        $(".dropdown").mouseenter(function(){
+          $(".dropdown-toggle").dropdown();
+        });
+
+        $(".dropdown").mouseleave(function(){
+          $(".dropdown-menu").hide();
+        });
+        
+        }); 
+    </script>
+
+    <style type="text/css">
+    .main{
+      background-color: #2d2c2c;
+      height: auto;
+      margin-top: 30px;
+      display: flex;
+    }
+    body{
+      background-color: black;
+    }
+    .left{
+      height: auto;
+      width: 25%;
+      border-right: 1px solid gray;
+      display: flex;
+      flex-direction: column;
+    }
+    .release{
+      background-color: white;
+      width: 240px;
+      height: auto;
+      margin-left: 10px;
+      margin-top: 15px;
+    }
+    .popular{
+      background-color: white;
+      margin-left: 10px;
+      margin-top: 15px;
+    }
+    .content{
+      width: 100%;
+      border: 1px solid gray;
+      margin: 20px;
+      background-color: white
+    }
+    .imgmain{
+      margin: 20px;
+      max-width: 95%;
+      height: auto;
+      margin-bottom: -5px;
+    }
+    h5,h2, .berita {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+    h1 {
+      background-color: #2d2c2c;
+      width: 100%;
+      color: white;
+    }
+    ul{
+      margin-left: -10px;
+    }
+    fieldset{
+      border: 1px solid black;
+    }
+    legend{
+      font-size: 13px;
+      margin-left: 15px;
+      background-color: white;
+      width: auto;
+      color: black;
+      border-color: white;
+      border: 1px solid black;
+    }
+    .list{
+      color: black;
+    }
+    .list:hover{
+      text-decoration: none;
+    }
+    #share-sossial-buttons img {
+      width: 40px;
+      margin-top: 30px;
+      margin-left: 20px;
+      border: 0;
+      box-shadow: 0;
+      display: inline;
+    }
+    .commnent{
+      margin-left: 20px;
+      width: 200px;
+    }
+    .txt{
+      border: 1px solid black;
+      margin-left: 20px;
+      width: 500px;
+    }
+    .cmipt{
+      margin-left: 20px;
+      margin-top: 3px;
+    }
+    .isi{
+      margin-top: 20px;
+      margin-left: 20px;
+    }
+    .nama{
+      border: 1px solid black; 
+      margin-left: 20px;
+      margin-bottom: 10px;
+    }
+    .cmt{
+      margin-left: 10px;
+    }
+    </style>
+</head>
+<body >
+<header id="header">
+    <nav class="navbar fixed-top" role="banner">  
+      <div class="container">
+        <!--/.logo-->
+          <ul class="nav navbar-nav ">
+            <a class="navbar-brand" href="index.html">
+          <!-- contoh logo -->
+            <img class="logo" src="../assets/img/logo.png"> 
+            </a>
+            <li class=""><a class="nav-link" href="../index.html">Home</a></li>
+            <li><a class="nav-link" href="../pcgame.html">Pc Games</a>
+            <li  class="dropdown">
+              <a class="nav-link" href="#" class="dropdown-toggle"" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false" >Console</a>
+                <ul class="dropdown-menu">
+                  <li><a class="nav-link" href="../playstation.html">Playstation</a></li>
+                  <li><a class="nav-link" href="../xbox.html">Xbox</a></li>
+                  <li><a class="nav-link" href="../Nintendo.html">Nintendo</a></li>
+                </ul>
+            </li>
+            <li><a class="nav-link" href="../mobile.html">Mobile</a></li>
+            <li><a class="nav-link" href="../review.html">Review</a></li>
+            <li><a class="nav-link" href="../trailer.html">Trailer</a></li>
+            <li><a class="nav-link" href="../aboutus.html">About Us</a></li>
+            <li><a class="nav-link" href="../contact.html">Contact Us</a></li>
+            <li><a class="nav-link" href="../team.html">Team</a></li>
+            <!--/.Menu-->
+
+            <li><a class="cari"><img class="be-cari" src="../assets/img/search-icon.png"></a></li>
+          </ul>
+          <div class="btn-be-search">
+            <img class="af-cari" src="../assets/img/close-icon.png">
+          </div>
+          <form class="form-inline" action="../search.html">
+            <input class="boxsearch" type="search" placeholder=" Search.." name="search">
+            <button class="srch"><img class="icari" src="../assets/img/search-icon.png"></button>
+            </form>
+          <!--/.search-->
+        <!--/.Menu-->
+      </div>
+    
+         <!--/.container-->
+    </nav>
+    <!--/nav-->
+  </header>
+  
+  
+
+ <div class="container main">
+  <div class="col-lg-4">
+      <fieldset class="release">
+        <legend>Game Release Date</legend>
+        <ul>
+          <li><span><a class="list" href="../news.html">God of War Terbaru telah rilis</a></span></li>
+          <hr>
+          <li><span><a class="list" href="../news.html">God of War Terbaru telah rilis</a></span></li>
+          <hr>
+          <li><span><a class="list" href="../news.html">God of War Terbaru telah rilis</a></span></li>
+          <hr>
+          <li><span><a class="list" href="../news.html">God of War Terbaru telah rilis</a></span></li>
+          <hr>
+          <li><span><a class="list" href="../news.html">God of War Terbaru telah rilis</a></span></li>
+          <hr>
+        </ul>
+      </fieldset>
+
+       <fieldset class="popular">
+        <legend>Popular Articles</legend>
+        <ul>
+          <li><span><a class="list" href="../news.html">G../od of War Terbaru telah rilis</a></span></li>
+          <hr>
+          <li><span><a class="list" href="../news.html">God of War Terbaru telah rilis</a></span></li>
+          <hr>
+          <li><span><a class="list" href="../news.html">God of War Terbaru telah rilis</a></span></li>
+          <hr>
+          <li><span><a class="list" href="../news.html">God of War Terbaru telah rilis</a></span></li>
+          <hr>
+          <li><span><a class="list" href="../news.html">God of War Terbaru telah rilis</a></span></li>
+          <hr>
+        </ul>
+      </fieldset>
+  </div>
+  <div class="content">
+    <article>
+      <img class="imgmain" src="../assets/img/review/detroitBM.jpg">
+      <h5><span class="glyphicon glyphicon-time"></span> Post by IGame, May 29, 2018.</h5>
+      <h2>Review Detroit: Become Human</h2>
+      <p class="berita">Kara adalah sebuah Android asisten rumah tangga yang kembali bekerja di seorang rumah pemabuk dan pengadat bernama Todd. Diminta untuk mengurus rumah, Kara juga bertanggung jawab untuk kesejahteraan anak perempuan Todd – Alice yang menjadi korban kekerasan ayahnya. Sementara Markus yang punya peran yang tidak berbeda, tinggal di sebuah rumah yang begitu berbeda. Ia justru tinggal bersama dengan majikan yang menjamin kehidupan selayaknya manusia, sembari mendorongnya untuk mengembangkan sisi kemanusiaan lewat kebebasan berekspresi dan seni. Di sisi lain, kita bertemu dengan Connor – sebuah prototype Android terbaru dari CyberLife yang diminta untuk bekerja erat dengan aparat keamanan. Misinya? Berburu para Android “rusak” yang disebut sebagai Deviant. “Rusak”karena alih-alih datar dan mengikuti apapun perintah majikannya, para Android ini berujung membangkang, memperlihatkan emosi seperti sedih dan takut, dan beberapa berakhir membunuh majikannya sendiri.
+
+      Cerita bergerak lewat dua kacamata yang berbeda. Ketika Connor secara konsisten berburu para Deviant, dari satu kasus ke kasus yang lainnya, Kara dan Markus justru memperlihakan kecenderungan untuk berubah menjadi seorang Deviant. Keduanya harus mulai mendobrak “kekakuan” sifat mereka sebagai Android karena sebuah kejadian yang traumatis, yang berujung memberikan mereka kekuatan yang tidak seharusnya dimiliki – yakni, moral dan kesadaran diri. Ketika Connor terus melakukan proses investigasi, Kara dan Markus berhadapan dengan situasi sulit sebagai seorang Android. Yang menjadi misteri terbesar? Para Deviant ini ternyata memiliki benang merah yang sama. Connor terus menemukan sebuah kode bertuliskan “rA9” untuk setiap pertemuan Deviant yang ia dapatkan.</p>
+
+    </article>
+
+    <div id="share-sossial-buttons">
+
+    <!-- Untuk Facebook -->
+    <a href="http://www.facebook.com/sharer.php?u=news.html" target="_blank">
+        <img src="../assets/img/bfacebook.png" alt="Facebook" />
+    </a>
+    
+    <!-- Untuk Google+ -->
+    <a href="https://plus.google.com/share?url=news.html" target="_blank">
+        <img src="../assets/img/bgoogle.png" alt="Google" />
+    </a>
+    
+    <!-- Untuk Twitter -->
+    <a href="https://twitter.com/share?url=news.html" target="_blank">
+        <img src="../assets/img/btwitter.png" alt="Twitter" />
+    </a>
+    
+    <h1>Comments</h1>
+    <form  ng-app="mycomment" ng-controller="myctrl" class="comment">
+    <input class="nama" ng-model="addNama" type="text" name="name" placeholder="   Nama..."> 
+    <textarea ng-model="addMe" name="comment" class="form-control txt" placeholder="Enter your commnet..." cols="10" rows="5">
+      </textarea>
+      <input class="cmipt" type="submit" ng-click="addItem()" value="Comment">
+      <hr style="height: 5px; color: black;">
+      <div class="isi">
+      <h4 ng-repeat="nama in nama">{{nama}}</h4>
+      <p class="cmt" ng-repeat="x in x">{{x}}</p>
+    </div>
+    </form>
+    
+</div>
+  </div>
+</div>
+</div>
+</body>
+</html>

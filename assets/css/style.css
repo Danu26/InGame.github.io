@@ -1,0 +1,178 @@
+/* ===================================
+ ===========General========
+==================================== */
+  
+/*******Header********/
+  .logo{
+    height: 50px;
+    width: 50px;
+    background-color: transparent;
+
+  }
+  .navbar {
+    background: #831111;
+    height: 7%;
+  }
+  .navbar-nav{
+    padding-top: 2px;
+    font-family: arial black;
+    font-size: 14px;
+  }
+  .active{
+  z-index: 1;
+  background-color: #a50505;
+}
+  
+  .nav-link{
+    color: #fff;
+  }
+
+  /*********Search********/
+
+  .box-search{
+    width: 130%;
+    height: 55px;
+    font-size: 15px;
+    margin-top: 2px;
+  }
+  .input-search{
+    width: 170px;
+    height: 30px;
+    margin-top: 10px;
+
+   
+  }
+  .btn-search{
+    height: 30px;
+    width: 30px;
+    margin-right: 10px;
+    margin-left: 3px;
+    margin-top: 10px;
+
+
+  }
+  .pcari{
+    height: 52px;
+    width: 130%;
+    padding-top: 15px;
+    padding-left: 25px;
+  }
+  .be-cari{
+    height: 20px;
+    width: 20px;
+    margin-left: 10px;
+  }
+  .af-cari{
+    height: 22px;
+    width: 22px;
+    margin-top: 10px;
+    margin-left: 10px;
+
+    top: 15px;
+  }
+  .icari{
+    height: 20px;
+    width: 20px;
+    margin-left: -5px;
+    margin-top: -5px;
+  }
+
+  .btn-be-search{
+    height: 52px;
+    width: 55px;
+
+  }
+  .btn-be-search:hover {
+    background-color: white
+  }
+
+  /*******left********/
+
+
+/* ===================================
+ ===========INDEX========
+==================================== */
+/*******Homepage******/
+
+.homepage{
+  padding-top: 70px;
+  margin-bottom: 20px; 
+  height: 1450px;
+  background-color: orange;
+}
+/*******Top******/
+
+/*******SlideShow******/
+.imgSlide{
+  height:350px; 
+  width: 100%;
+}
+
+.slide-content{
+  height: 30%;
+  margin-left: -15%;
+  margin-right: -15%;
+  margin-bottom: -2%;
+  background-color: black;  
+  opacity: 0.6;
+}
+
+/*******Right******/
+
+.heading{
+  width: 96.5%;
+  height: 45px;
+  margin-top: 10px;
+  margin-left:1.8%; 
+  padding-left: 20px;
+  padding-top: 10px;
+  background-color: #831111;
+  font-family: arial black;
+  font-size: 20px;
+  color: white;
+}
+.grid-news{
+  margin-top: 5px;
+  padding-left: 2px;  
+  border-radius: 5px;
+}
+
+.news{
+  background-color: white;
+  width: 100%;
+}
+.image-news{
+  height: 100%;
+  width: 100%;
+}
+.news-title{
+  text-align: center;
+  font-family: arial black;
+  color: white;
+}
+.news-title:hover{
+  text-decoration: none;
+  color: #831111;
+}
+.news-content{
+  margin-left: 2%;
+  font-family: arial;
+  font-size: 12px;
+  color: black;
+}
+.read-more{
+  height: 5%;
+  text-align: right;
+  font-family: arial black;
+  font-size: 12px;
+  color: white;
+  background-color: #831111;
+  height: 50%;
+}
+.page-number{
+   width: 100%;
+  height: 45px;
+  margin-top: 10px;
+  padding-left: 20px;
+  background-color: grey;
+}

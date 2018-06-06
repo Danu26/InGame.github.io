@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	 <link href="assets/css/style.css" rel="stylesheet">
+   <link href="assets/css/trailer.css" rel="stylesheet">
+     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+	 
+
+  <script>
+      $(document).ready(function(){
+        $(".box-search").hide();
+        $(".btn-be-search").hide();
+        $(".trailer-overlay").hide();
+        $(".play").hide();
+        
+        // Search
+        $(".pcari").click(function(){
+          $(".box-search").show();
+          $(".btn-be-search").show();
+          $(this).hide();
+            });
+          $(".dropdown-menu").hide();
+
+        $(".btn-be-search").mouseenter(function(){
+          $(this).css("cursor","pointer");
+         });
+
+        $(".btn-be-search").click(function(){
+          $(".pcari").show();
+          $(this).hide();
+          $(".box-search").hide();
+           });
+        
+        $(".pcari").mouseenter(function(){
+          $(this).css("cursor","pointer");
+        });
+        // dropdown
+        $(".dropdown").mouseenter(function(){
+          $(".dropdown-toggle").dropdown();
+        });
+
+        $(".dropdown").mouseleave(function(){
+          $(".dropdown-menu").hide();
+        });
+
+        //Trailer
+        $(".trailer-box").mouseenter(function(){
+        $(this).css("cursor","pointer")
+        $(this).css("box-shadow"," 4px 4px 8px 0 rgba(0, 0, 0, 0.9), 0 6px 20px 0 rgba(0, 0, 0, 0.8)")
+        });
+
+        $(".trailer-box").mouseleave(function(){
+        $(this).css("box-shadow","none")
+        });
+
+        //button trailer
+        //01
+        $(".t1").mouseenter(function(){
+        	$(".o1").show()
+        	
+        });
+        $(".t1").mouseleave(function(){
+        	$(".o1").hide()
+        });
+        //02
+         $(".t2").mouseenter(function(){
+        	$(".o2").show()	
+        });
+        $(".t2").mouseleave(function(){
+        	$(".o2").hide()
+         });
+        //3
+         $(".t3").mouseenter(function(){
+        	$(".o3").show()	
+        });
+        $(".t3").mouseleave(function(){
+        	$(".o3").hide()
+         });
+        //4
+         $(".t4").mouseenter(function(){
+        	$(".o4").show()	
+        });
+        $(".t4").mouseleave(function(){
+        	$(".o4").hide()
+         });
+        //5
+         $(".t5").mouseenter(function(){
+        	$(".o5").show()	
+        });
+        $(".t5").mouseleave(function(){
+        	$(".o5").hide()
+         });
+        //6
+         $(".t6").mouseenter(function(){
+        	$(".o6").show()	
+        });
+        $(".t6").mouseleave(function(){
+        	$(".o6").hide()
+         });
+        //7
+         $(".t7").mouseenter(function(){
+        	$(".o7").show()	
+        });
+        $(".t7").mouseleave(function(){
+        	$(".o7").hide()
+         });
+        //8
+         $(".t8").mouseenter(function(){
+        	$(".o8").show()	
+        });
+        $(".t8").mouseleave(function(){
+        	$(".o8").hide()
+         });
+        //9
+         $(".t9").mouseenter(function(){
+        	$(".o9").show()	
+        });
+        $(".t9").mouseleave(function(){
+        	$(".o9").hide()
+         });
+
+
+        $(".play").mouseenter(function(){
+        	$(this).css("background-color","#831111")
+        	$(this).css("box-shadow"," 4px 4px 8px 0 rgba(0, 0, 0, 0.9), 0 6px 20px 0 rgba(0, 0, 0, 0.8)")
+        });
+         $(".play").mouseleave(function(){
+        	$(this).css("background-color","#fff")
+        	$(this).css("box-shadow","none")
+        });
+   
+        });   
+
+    </script>
+
+    <style type="text/css">
+    	.col-xl-12{
+    		background-color: #2d2c2c
+    	}
+    	.col-lg-4{
+		height: 50%;
+		}
+    </style>
+</head>
+<body style="background-color: #232323;">
+
+	    <nav class="navbar fixed-top navbar-expand-md navbar-no-bg">
+       <div class="container">
+        <img src="assets/img/logo.png" alt="logo" class="logo navbar-left">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse " id="navbarNav">
+              <ul class="nav navbar-nav">
+                  <li class="nav-item">
+                      <a class="nav-link scroll-link" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link scroll-link" href="pcgame.html">Pc Games</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                      <a class="nav-link scroll-link dropdown-toggle" href="#">Consol</a>
+                      <div class="dropdown-menu">
+                         <a class="dropdown-item" href="playstation.html">Playstation</a> 
+                         <a class="dropdown-item" href="xbox.html">Xbox</a>
+                         <a class="dropdown-item" href="nintendo.html">Nintendo</a> 
+                      </div>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link scroll-link" href="mobile.html">Mobile</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link scroll-link" href="review.html">Review</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link scroll-link active" href="trailer.html">Trailer</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link scroll-link" href="aboutus.html">About Us</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link scroll-link" href="contact.html">Contact Us</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link scroll-link" href="team.html">Team</a>
+                  </li>
+              </ul>
+              <ul class="nav navbar-nav ml-auto">
+               <li class="nav-item"> <a class="nav-link scroll-link pcari"><img class="be-cari" src="assets/img/search-icon.png">
+            </a></li>
+             <li class="nav-item">
+              <form action="search.html">
+                <div class="box-search">
+                  <a><input class="input-search" type="text" name="search" placeholder="Search.."><button  autofocus="true" class="btn-search" type="submit"><img class="icari" src="assets/img/search-icon.png"></button></a>
+                </div>
+              </form>
+              </li>
+               <li class="nav-item">
+            <!--/.Menu-->
+              <div class="btn-be-search nav-link scroll-link">
+                <img class="af-cari" src="assets/img/close-icon.png">
+               </div>
+             </li>
+              </ul>
+          </div>
+        </div>
+    </nav>
+   <!--/.search-->
+
+    <div class="container trailer">
+   		<div class="row">
+   			<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+   				<!--Trailer-->
+          <h1 class="judul">Trailer</h1>
+   				<div class="trailer-container">
+   					<div class="row">
+   				<!--1-->	
+	   					<div class="col-lg-4 no-gutters">
+		   					<div class="trailer-box t1">
+		   						<img src="assets/img/trailer/codww2.png" class="trailer-img">
+		   							<a data-toggle="modal" href="#myModal" class="play o1">
+		   								<div class="trailer-overlay">
+		   								</div>
+		   									<img src="assets/img/circle-play.png" class="play-img">		
+									</a>
+		   					</div>
+   					</div>
+   				<!--3-->
+   				<div class="col-lg-4 no-gutters">
+   					<div class="trailer-box t2">
+   						<img src="assets/img/trailer/btlfV.jpg" class="trailer-img">
+   							<a data-toggle="modal" href="#myModal2" class="play o2">
+		   							<div class="trailer-overlay">
+		   								</div>
+		   									<img src="assets/img/circle-play.png" class="play-img">		
+							</a>
+ 					</div>
+   				</div>
+   				<!--3-->
+   				<div class="col-lg-4 no-gutters">
+   					<div class="trailer-box t3">
+   						<img src="assets/img/trailer/wwar3.png" class="trailer-img">
+   						<a data-toggle="modal" href="#myModal3" class="play o3">
+		   							<div class="trailer-overlay">
+		   								</div>
+		   									<img src="assets/img/circle-play.png" class="play-img">		
+						</a>
+ 					</div>
+   				</div>
+   				<!--4-->
+   				<div class="col-lg-4 no-gutters">
+   					<div class="trailer-box t4">
+   						<img src="assets/img/trailer/daygone.jpg" class="trailer-img">
+   						<a data-toggle="modal" href="#myModal4" class="play o4">
+		   								<div class="trailer-overlay">
+		   								</div>
+		   									<img src="assets/img/circle-play.png" class="play-img">		
+									</a>
+ 					</div>
+   				</div>
+   				<!--5-->
+   				<div class="col-lg-4 no-gutters">
+   					<div class="trailer-box t5">
+   						<img src="assets/img/trailer/thelastofus2.jpg" class="trailer-img">
+   						<a data-toggle="modal" href="#myModal5" class="play o5">
+		   								<div class="trailer-overlay">
+		   								</div>
+		   									<img src="assets/img/circle-play.png" class="play-img">		
+									</a>
+ 					</div>
+   				</div>
+   				<!--6-->
+   				<div class="col-lg-4 no-gutters">
+   					<div class="trailer-box t6">
+   						<img src="assets/img/trailer/motogp18.jpg" class="trailer-img">
+   						<a data-toggle="modal" href="#myModal6" class="play o6">
+		   								<div class="trailer-overlay">
+		   								</div>
+		   									<img src="assets/img/circle-play.png" class="play-img">		
+									</a>
+ 					</div>
+   				</div>
+   				<!--7-->
+   				<div class="col-lg-4 no-gutters">
+   					<div class="trailer-box t7">
+   						<img src="assets/img/trailer/jurassicWE.jpg" class="trailer-img">
+   						<a data-toggle="modal" href="#myModal7" class="play o7">
+		   								<div class="trailer-overlay">
+		   								</div>
+		   									<img src="assets/img/circle-play.png" class="play-img">		
+									</a>
+ 					</div>
+   				</div>
+   				<!--8-->
+   				<div class="col-lg-4 no-gutters">
+   					<div class="trailer-box t8">
+   						<img src="assets/img/trailer/legoinc.jpeg" class="trailer-img">
+   						<a data-toggle="modal" href="#myModal8" class="play o8">
+		   								<div class="trailer-overlay">
+		   								</div>
+		   									<img src="assets/img/circle-play.png" class="play-img">		
+									</a>
+ 					</div>
+   				</div>
+   				<!--9-->
+   				<div class="col-lg-4 no-gutters">
+   					<div class="trailer-box t9">
+   						<img src="assets/img/trailer/viiiLOdana.jpg" class="trailer-img">
+   						<a data-toggle="modal" href="#myModal9" class="play o9">
+		   								<div class="trailer-overlay">
+		   								</div>
+		   									<img src="assets/img/circle-play.png" class="play-img">		
+									</a>
+ 					</div>
+   				</div>
+
+
+   				
+   				</div>
+   			</div>
+   				<div class="row">
+		   			<ul class="pagination">
+					  <li class="page-item active"><a class="page-link" href="#">1</a></li>
+					  <li class="page-item "><a class="page-link" href="#">2</a></li>
+					</ul>
+   			</div>
+   		</div>
+ 	</div>
+   </div>
+
+   <div class="container">
+  <!-- Modal -->
+  		<!-- 1 -->
+		<div class="modal" id="myModal">
+		    <div class="modal-dialog modal-lg modal-content">
+		      	<p type="button" class="btn-close" data-dismiss="modal">
+		          	<img class="close-btn" src="assets/img/close-icon.png">
+		          </p>
+		          <div class="modal-frame">
+		      		 <iframe class="t-frame" src="https://www.youtube.com/embed/a9ITIaKzG3A" frameborder="0" autoplay="" allowfullscreen></iframe>
+		      		</div>
+			</div>
+		</div> 
+		<!-- 2 -->
+		<div class="modal" id="myModal2">
+		    <div class="modal-dialog modal-lg modal-content">
+		      	<p type="button" class="btn-close" data-dismiss="modal">
+		          	<img class="close-btn" src="assets/img/close-icon.png">
+		         </p>
+		            <div class="modal-frame">
+		      		 <iframe class="t-frame" src="https://www.youtube.com/embed/a7ZpQadiyqs" frameborder="0" allow="false; encrypted-media" allowfullscreen></iframe>
+		      		</div>
+			</div>
+		</div>
+		<!-- 3 -->
+		<div class="modal" id="myModal3">
+		    <div class="modal-dialog modal-lg modal-content">
+		      	<p type="button" class="btn-close" data-dismiss="modal">
+		          	<img class="close-btn" src="assets/img/close-icon.png">
+		         </p>
+		            <div class="modal-frame">
+		      		 <iframe class="t-frame" src="https://www.youtube.com/embed/ysgzR2jMwNE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+		      		</div>
+			</div>
+		</div> 
+		<!-- 4 -->
+		<div class="modal" id="myModal4">
+		    <div class="modal-dialog modal-lg modal-content">
+		      	<p type="button" class="btn-close" data-dismiss="modal">
+		          	<img class="close-btn" src="assets/img/close-icon.png">
+		         </p>
+		            <div class="modal-frame">
+		      		 <iframe class="t-frame" src="https://www.youtube.com/embed/n95IaELdWDU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+		      		</div>
+			</div>
+		</div> 
+		<!-- 5 -->
+		<div class="modal" id="myModal5">
+		    <div class="modal-dialog modal-lg modal-content">
+		      	<p type="button" class="btn-close" data-dismiss="modal">
+		          	<img class="close-btn" src="assets/img/close-icon.png">
+		         </p>
+		            <div class="modal-frame">
+		      		 <iframe class="t-frame" src="https://www.youtube.com/embed/qPNiIeKMHyg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+		      		</div>
+			</div>
+		</div> 
+		<!-- 6 -->
+		<div class="modal" id="myModal6">
+		    <div class="modal-dialog modal-lg modal-content">
+		      	<p type="button" class="btn-close" data-dismiss="modal">
+		          	<img class="close-btn" src="assets/img/close-icon.png">
+		         </p>
+		            <div class="modal-frame">
+		      		<iframe class="t-frame" src="https://www.youtube.com/embed/pUEHcFC3qbM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+		      		</div>
+			</div>
+		</div> 
+		<!-- 7 -->
+		<div class="modal" id="myModal7">
+		    <div class="modal-dialog modal-lg modal-content">
+		      	<p type="button" class="btn-close" data-dismiss="modal">
+		          	<img class="close-btn" src="assets/img/close-icon.png">
+		         </p>
+		            <div class="modal-frame">
+		      		 <iframe class="t-frame" src="https://www.youtube.com/embed/1d0KE-nSlO8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+		      		</div>
+			</div>
+		</div> 
+		<!-- 8 -->
+		<div class="modal" id="myModal8">
+		    <div class="modal-dialog modal-lg modal-content">
+		      	<p type="button" class="btn-close" data-dismiss="modal">
+		          	<img class="close-btn" src="assets/img/close-icon.png">
+		         </p>
+		            <div class="modal-frame">
+		      		 <iframe class="t-frame" src="https://www.youtube.com/embed/5jORlEtO7zU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+		      		</div>
+			</div>
+		</div> 
+		<!-- 9 -->
+		<div class="modal" id="myModal9">
+		    <div class="modal-dialog modal-lg modal-content">
+		      	<p type="button" class="btn-close" data-dismiss="modal">
+		          	<img class="close-btn" src="assets/img/close-icon.png">
+		         </p>
+		            <div class="modal-frame">
+		      		 <iframe class="t-frame" src="https://www.youtube.com/embed/06_0JG7GjuY" frameborder="0" encrypted-media" allowfullscreen></iframe>
+		      		</div>
+			</div>
+		</div>  
+	</div>
+
+    <!--/.Trailer Container-->
+</body>
+</html>

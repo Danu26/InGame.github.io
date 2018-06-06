@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contact Us</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="assets/css/header.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="assets/css/contact.css">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <script src="assets/js/jquery-3.3.1.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/angular/angular.min.js"></script>
+
+<script>
+      $(document).ready(function(){
+        $(".boxsearch").hide();
+        $(".btn-be-search").hide();
+        $(".srch").hide();
+
+        
+        // Search
+        $(".cari").click(function(){
+          $(".boxsearch").show();
+          $(".btn-be-search").show();
+          $(".srch").show();
+          $(this).hide();
+            });
+          $(".dropdown-menu").hide();
+
+        $(".btn-be-search").mouseenter(function(){
+          $(this).css("cursor","pointer");
+         });
+
+        $(".btn-be-search").click(function(){
+          $(".cari").show();
+          $(this).hide();
+          $(".boxsearch").hide();
+          $(".srch").hide();
+           });
+        
+        $(".cari").mouseenter(function(){
+          $(this).css("cursor","pointer");
+        });
+        // dropdown
+        $(".dropdown").mouseenter(function(){
+          $(".dropdown-toggle").dropdown();
+        });
+
+        $(".dropdown").mouseleave(function(){
+          $(".dropdown-menu").hide();
+        });
+        
+        }); 
+    </script>
+    <script>
+
+      var app = angular.module('app', []);
+      app.controller('validateCtrl', function($scope) {
+          $scope.name = '';
+          $scope.email = '';
+      });
+    </script>
+
+    <style type="text/css">
+      body{
+        background-color: black;
+      }
+      .cont{
+        float: left;
+      }
+      .follow{
+        float: left;
+      }
+      .main{
+        background-color: #232323;
+        margin-top: 70px;
+        height: 800px;
+      }
+      .txt{
+        width: 600px;
+        margin-top: 20px;
+        margin-left: 80px;
+      }
+      h2{
+        margin-left: 80px;
+        color: white;
+      }
+      .ipt{
+        height: 40px;
+        width: 600px;
+        margin-top: 30px;
+        margin-left: 80px;
+      }
+      .ipt2{
+        height: 40px;
+        width: 600px;
+        margin-top: 40px;
+        margin-left: 80px;
+      }
+      .twt{
+        height: 50px;
+        width: 50px;
+        margin-left: 55px;
+        margin-top: 20px;
+        float: left;
+      }
+
+      .twt1{
+        height: 50px;
+        width: 50px;
+        margin-left: 52px;
+        margin-top: 25px;
+        color: black;
+        text-decoration: none;
+        font-size: 30px;
+        color: white;
+        float: left;
+      }
+      .twt1:hover{
+        text-decoration: none;
+      }
+      .fb{
+        height: 80px;
+        width: 80px;
+        margin-right: 38px;
+        margin-left: 39px;
+        margin-top: 15px;
+        float: left;
+   
+      }
+      .fb1{
+        height: 50px;
+        width: 50px;
+        margin-top: 40px;
+        color: black;
+        text-decoration: none;
+        font-size: 30px;
+        float: left;
+        color: white;
+      }
+      .fb1:hover{
+        text-decoration: none;
+      }
+      .ggl{
+        height: 50px;
+        width: 50px;
+        margin-right: 100px;
+        margin-left: 53px;
+        margin-top: 20px;
+        background-color: transparent;
+        float: left;
+      }
+      .ggl1{
+        height: 50px;
+        width: 50px;
+        color: black;
+        font-size: 30px;
+        margin-top: 30px;
+        margin-left: -47px;
+        left: 50px;
+        float: left;
+        color: white;
+      }
+      .ggl1:hover{
+        text-decoration: none;
+      }
+      .send{
+        margin-top: 15px;
+        margin-left: 300px;
+        margin-bottom: 30px;
+      }
+    </style>
+</head>
+<body ng-app="app">
+<header id="header">
+    <nav class="navbar navbar-fixed-top" role="banner">  
+      <div class="container">
+        <!--/.logo-->
+          <ul class="nav navbar-nav ">
+            <a class="navbar-brand" href="index.html">
+          <!-- contoh logo -->
+            <img class="logo" src="assets/img/logo.png"> 
+            </a>
+            <li class=""><a class="nav-link" href="index.html">Home</a></li>
+            <li><a class="nav-link" href="pcgame.html">Pc Games</a>
+            <li  class="dropdown">
+              <a class="nav-link" href="#" class="dropdown-toggle"" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false" >Console</a>
+                <ul class="dropdown-menu">
+                  <li><a class="nav-link" href="playstation.html">Playstation</a></li>
+                  <li><a class="nav-link" href="xbox.html">Xbox</a></li>
+                  <li><a class="nav-link" href="Nintendo.html">Nintendo</a></li>
+                </ul>
+            </li>
+            <li><a class="nav-link" href="mobile.html">Mobile</a></li>
+            <li><a class="nav-link" href="review.html">Review</a></li>
+            <li><a class="nav-link" href="trailer.html">Trailer</a></li>
+            <li><a class="nav-link" href="aboutus.html">About Us</a></li>
+            <li><a class="nav-link active" href="contact.html">Contact Us</a></li>
+            <li><a class="nav-link" href="team.html">Team</a></li>
+            <!--/.Menu-->
+
+            <li><a class="cari"><img class="be-cari" src="assets/img/search-icon.png"></a></li>
+          </ul>
+          <div class="btn-be-search">
+            <img class="af-cari" src="assets/img/close-icon.png">
+          </div>
+          <form class="form-inline" action="search.html">
+            <input class="boxsearch" type="search" placeholder=" Search.." name="search">
+            <button class="srch"><img class="icari" src="assets/img/search-icon.png"></button>
+            </form>
+          <!--/.search-->
+        <!--/.Menu-->
+      </div>
+    
+         <!--/.container-->
+    </nav>
+    <!--/nav-->
+  </header>
+  
+  
+
+<div class="container main">
+  <div class="cont">
+    <h2>Contact Us</h2>
+    <form ng-app ="" ng-controller="validateCtrl" name="myform" novalidate>
+      <input type="text" name="name" ng-model="name" class="form-control ipt" placeholder="Enter name" required>
+      <span style="color:red; margin-left: 90px;" ng-show="myform.name.$dirty && myform.name.$invalid">
+      <span ng-show="myform.name.$error.required">Name is required.</span>
+      </span>
+      <input type="email" name="email" ng-model="input" class="form-control ipt2" placeholder="Enter email" required>
+      <span style="color:red; margin-left: 90px;" ng-show="myform.email.$dirty && myform.email.$invalid">
+      <span ng-show="myform.email.$error.required">Email is required.</span>
+      <span ng-show="myform.email.$error.email">Invalid email address.</span>
+      </span>
+      <input type="text" name="subject" class="form-control ipt2" placeholder="Enter subject">
+      <textarea name="your-massage" class="form-control txt" placeholder="Enter your massage" aria-invalid="false" cols="40" rows="10">Enter Your Message
+      </textarea>
+      <input class="send" type="submit" value="Send Your Message" 
+      ng-disabled="myform.name.$dirty && myform.name.$invalid ||  
+      myform.email.$dirty && myform.email.$invalid">
+    </form>
+  </div>
+  <div class="follow">
+    <div>
+    <h2>Follow Us On :</h2>
+    <img class="twt" src="assets/img/twitter.png"><a class="twt1" href="#">Twitter</a><br>
+    </div><br>
+    <div>
+    <img class="fb" src="assets/img/facebook.png"><a class="fb1" href="#">Facebook</a>
+    </div>
+    <div>
+      <img class="ggl" src="assets/img/google.png"><a class="ggl1" href="#">Google+</a>
+    </div>
+  </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	  <link href="assets/css/header.css" rel="stylesheet">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="assets/js/angular/angular.min.js"></script>
+
+    <script>
+      var app= angular.module('jam', []);
+      app.controller('datctrl', function($scope) {
+        $scope.today = new Date();
+      });
+    </script>
+
+    <script>
+      $(document).ready(function(){
+        $(".boxsearch").hide();
+        $(".btn-be-search").hide();
+        $(".srch").hide();
+
+        
+        // Search
+        $(".cari").click(function(){
+          $(".boxsearch").show();
+          $(".btn-be-search").show();
+          $(".srch").show();
+          $(this).hide();
+            });
+          $(".dropdown-menu").hide();
+
+        $(".btn-be-search").mouseenter(function(){
+          $(this).css("cursor","pointer");
+         });
+
+        $(".btn-be-search").click(function(){
+          $(".cari").show();
+          $(this).hide();
+          $(".boxsearch").hide();
+          $(".srch").hide();
+           });
+        
+        $(".cari").mouseenter(function(){
+          $(this).css("cursor","pointer");
+        });
+        // dropdown
+        $(".dropdown").mouseenter(function(){
+          $(".dropdown-toggle").dropdown();
+        });
+
+        $(".dropdown").mouseleave(function(){
+          $(".dropdown-menu").hide();
+        });
+        
+        }); 
+    </script>
+    <style type="text/css">
+      .main{
+        background-color: #2d2c2c;
+        margin-top: 70px;
+      }
+      .row{
+      margin-bottom: 20px;
+      }
+      .thumb{
+      width: 240px;
+      height: 140px;
+      margin-left: 10px;
+      }
+      h1, p{
+        color: white;
+      }
+      .jam{
+        margin-top: -50px;
+        margin-left: 900px;
+      }
+    </style>
+</head>
+<!--/.head-->
+<body style="background-color: #232323;">
+<header id="header">
+    <nav class="navbar navbar-fixed-top" role="banner">  
+      <div class="container">
+        <!--/.logo-->
+          <ul class="nav navbar-nav ">
+            <a class="navbar-brand" href="index.html">
+          <!-- contoh logo -->
+            <img class="logo" src="assets/img/logo.png"> 
+            </a>
+            <li class=""><a class="nav-link" href="index.html">Home</a></li>
+            <li><a class="nav-link" href="pcgame.html">Pc Games</a>
+            <li  class="dropdown">
+              <a class="nav-link" href="#" class="dropdown-toggle"" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false" >Console</a>
+                <ul class="dropdown-menu">
+                  <li><a class="nav-link" href="playstation.html">Playstation</a></li>
+                  <li><a class="nav-link" href="xbox.html">Xbox</a></li>
+                  <li><a class="nav-link" href="Nintendo.html">Nintendo</a></li>
+                </ul>
+            </li>
+            <li><a class="nav-link" href="mobile.html">Mobile</a></li>
+            <li><a class="nav-link" href="review.html">Review</a></li>
+            <li><a class="nav-link" href="trailer.html">Trailer</a></li>
+            <li><a class="nav-link" href="aboutus.html">About Us</a></li>
+            <li><a class="nav-link" href="contact.html">Contact Us</a></li>
+            <li><a class="nav-link" href="team.html">Team</a></li>
+            <!--/.Menu-->
+
+            <li class="pcari"><a class="cari"><img class="be-cari" src="assets/img/search-icon.png"></a></li>
+          </ul>
+          <div class="btn-be-search">
+            <img class="af-cari" src="assets/img/close-icon.png">
+          </div>
+          <form class="form-inline" action="search.html">
+            <input class="boxsearch" type="search" placeholder=" Search.." name="search">
+            <button class="srch"><img class="icari" src="assets/img/search-icon.png"></button>
+            </form>
+          <!--/.search-->
+        <!--/.Menu-->
+      </div>
+    
+         <!--/.container-->
+    </nav>
+    <!--/nav-->
+  </header>
+
+
+
+<!--/Container-->
+<div class="container main">
+  <div style="margin-bottom: 20px; margin-left: 20px;">
+    <h1>Search</h1>
+    <div ng-app="jam" ng-controller="datctrl">
+      <p class="jam">{{ today | date : "'Today is ' MMM d, y"}}</p>
+    </div>
+    <br>
+  <input type="search" name="search">
+  <button>Search</button>
+  </div>
+  <div class="">
+    <div class="row">
+        <div class="col-lg-3 col-md-3 col-sm-3 com-xs-3">
+            <a href="news.html">
+              <div class="thumb"><img class="thumb" src="assets/img/asusROG.jpg">
+              </div>
+            </a>
+        </div>
+        <div class="col-lg-8 col-md-8 col-sm-8 com-xs-8">
+          <div class="bdy">
+            <h4><a href="news.html" rel="bookmark"><strong>God of War Terbaru telah rilis</strong></a></h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                  tempor incididunt ut labore et dolore magna aliqua.</p>
+                  <br>
+                  <br>
+                  <a href="news.html">
+                    continue +
+                  </a>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-3 col-md-3 col-sm-3 com-xs-3">
+            <a href="news.html">
+              <div class="thumb"><img class="thumb" src="assets/img/asusROG.jpg">
+              </div>
+            </a>
+        </div>
+        <div class="col-lg-8 col-md-8 col-sm-8 com-xs-8">
+          <div class="bdy">
+            <h4><a href="news.html" rel="bookmark"><strong>God of War Terbaru telah rilis</strong></a></h4>
+                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                  tempor incididunt ut labore et dolore magna aliqua.</p>
+                  <br>
+                  <br>
+                  <a href="news.html">
+                    continue +
+                  </a>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-3 col-md-3 col-sm-3 com-xs-3">
+            <a href="news.html">
+              <div class="thumb"><img class="thumb" src="assets/img/asusROG.jpg">
+              </div>
+            </a>
+        </div>
+        <div class="col-lg-8 col-md-8 col-sm-8 com-xs-8">
+          <div class="bdy">
+            <h4><a href="news.html" rel="bookmark"><strong>God of War Terbaru telah rilis</strong></a></h4>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                  tempor incididunt ut labore et dolore magna aliqua.</p>
+                  <br>
+                  <br>
+                  <a href="news.html">
+                    continue +
+                  </a>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-3 col-md-3 col-sm-3 com-xs-3">
+            <a href="news.html">
+              <div class="thumb"><img class="thumb" src="assets/img/asusROG.jpg">
+              </div>
+            </a>
+        </div>
+        <div class="col-lg-8 col-md-8 col-sm-8 com-xs-8">
+          <div class="bdy">
+            <h4><a href="news.html" rel="bookmark"><strong>God of War Terbaru telah rilis</strong></a></h4>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                  tempor incididunt ut labore et dolore magna aliqua.</p>
+                  <br>
+                  <br>
+                  <a href="news.html">
+                    continue +
+                  </a>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
+</body>
+</html>
